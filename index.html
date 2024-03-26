@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="Light List">
+
+    <main>
+
+        <div class="flex">
+            <div id="noteList">
+
+                <h1>Countries<span id="Settings"><i class="fa fa-sliders" aria-hidden="true"></i></span></h1>
+                <div id="notes">
+                    <ul id="list">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sideNav" id="sidNav">
+                <form>
+                    <div id="close"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    <h3> Theme </h3>
+                    <input type="radio" id="Light" name="theme" value="Light" checked>
+                    <label for="Light">Light</label><br>
+                    <input type="radio" id="Dark" name="theme" value="Dark">
+                    <label for="Dark">Dark</label><br>
+                    <input type="radio" id="custom-theme" name="theme" value="custom-theme">
+                    <label for="custom-theme">custom</label><br>
+                    <div id="custom-theme-options">
+                        <label for="colorPicker">Choose a primary color:</label><br>
+                        <input type="color" id="colorPicker" name="theme" value="#ffad99"><br>
+                        <label for="colorPickertext">Primary text color:</label><br>
+                        <input type="color" id="colorPickertext" name="theme" value="#000000"><br>
+                        <label for="colorPicker2">Choose a secondary color:</label><br>
+                        <input type="color" id="colorPicker2" name="theme" value="#fda28b"><br>
+                        <label for="colorPicker2text">secondary text color:</label><br>
+                        <input type="color" id="colorPicker2text" name="theme" value="#000000">
+                        <div id="apply">Apply</div>
+                    </div>
+                    <h3> Style</h3>
+                    <input type="radio" id="List" name="style" value="List" checked>
+                    <label for="List">List</label><br>
+                    <input type="radio" id="Grid" name="style" value="Grid" >
+                    <label for="Grid">Grid</label><br>
+                    <input type="checkbox" id="myCheckbox">
+                    <label for="myCheckbox">Extra</label>
+
+                </form>
+            </div>
+        </div>
+        <div id="newNote">
+            <div class="contentDiv">
+                <form>
+                    <textarea id="newNote">Note</textarea>
+                    <div id="submit">Submit</div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <div id="cusCSS"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

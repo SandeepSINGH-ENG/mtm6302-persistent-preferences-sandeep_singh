@@ -1,0 +1,146 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.sideNav {
+  width: 235px;
+  background: #f4f4f4;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.sideNav h3 {
+  margin: 20px 0px;
+}
+div#noteList {
+  width: 84%;
+  background: #f4f4f438;
+  padding: 45px;
+}
+div#newNote {
+  display: none;
+}
+ul#list {
+  list-style: none;
+}
+.List #list li,
+.Grid #list li {
+  background: #f4f4f4;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+.Grid #list {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+.Grid #list li {
+  width: 32%;
+}
+.Grid #list li {
+  width: 32%;
+  margin: 0px;
+}
+.Dark {
+  background: #000000;
+  color: white;
+}
+.Dark .sideNav {
+  background: #212121;
+}
+.Dark #list li,
+.Dark #list li {
+  background: #000000 !important;
+}
+#custom-theme-options {
+  display: none;
+}
+div#apply {
+  width: 85px;
+  text-align: center;
+  background: black;
+  color: white;
+  padding: 7px;
+  margin-top: 15px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.addDetails ul#list li {
+  border: 1px solid;
+  box-shadow: 2px 4px 8px 0px #00000033;
+  border-radius: 5px;
+  position: relative;
+}
+ul#list li img {
+  width: 50px;
+}
+ul#list li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-transform: capitalize;
+}
+.Grid #list li a,
+#list li a {
+  text-decoration: none;
+  color: inherit;
+}
+.addDetails ul#list li a {
+  position: absolute;
+  right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+div#noteList h1 {
+  margin-bottom: 20px;
+}
+#Settings,
+#close {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #noteList {
+    width: 100% !important;
+  }
+  div#noteList h1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  #Settings,
+  #close {
+    display: block;
+  }
+  #sidNav {
+    display: none;
+    width: 100%;
+  }
+  .Grid #list li {
+    width: 48%;
+    margin: 0px;
+  }
+  div#noteList {
+    width: 90%;
+
+    padding: 19px;
+  }
+  ul#list li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .addDetails ul#list li a {
+    position: static;
+  }
+  ul#list li img {
+    width: 148px;
+    height: 82px;
+    object-fit: contain;
+  }
+}
